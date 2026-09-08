@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aaqib Aslam — Portfolio</title>
-  <meta name="description" content="Aaqib Aslam — safe, guardrailed agentic ops for regulated environments. Portfolio launching soon." />
+  <meta name="description" content="Aaqib Aslam — portfolio under maintenance, launching soon. Safe, guardrailed agentic ops for regulated environments." />
   <style>
     :root {
       --bg: #0b0f14;
@@ -14,6 +14,7 @@
       --line: #1e2833;
       --accent: #4fd1c5;
       --accent-2: #7aa2f7;
+      --warn: #f5c451;
     }
     * { box-sizing: border-box; }
     html, body { height: 100%; }
@@ -29,53 +30,83 @@
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-      padding: 28px;
+      padding: 40px 28px;
       line-height: 1.5;
     }
     .card {
       width: 100%;
-      max-width: 680px;
+      max-width: 820px;
+      text-align: center;
     }
     .status {
       display: inline-flex;
       align-items: center;
-      gap: 8px;
+      gap: 9px;
       font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
-      font-size: 12px;
-      letter-spacing: 0.06em;
+      font-size: 13px;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--muted);
-      border: 1px solid var(--line);
-      background: var(--panel);
-      padding: 7px 12px;
+      color: var(--warn);
+      border: 1px solid rgba(245,196,81,0.35);
+      background: rgba(245,196,81,0.08);
+      padding: 9px 16px;
       border-radius: 999px;
     }
     .dot {
-      width: 8px; height: 8px; border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 0 rgba(79,209,197,0.6);
+      width: 9px; height: 9px; border-radius: 50%;
+      background: var(--warn);
+      box-shadow: 0 0 0 0 rgba(245,196,81,0.6);
       animation: pulse 2s infinite;
     }
     @keyframes pulse {
-      0% { box-shadow: 0 0 0 0 rgba(79,209,197,0.5); }
-      70% { box-shadow: 0 0 0 9px rgba(79,209,197,0); }
-      100% { box-shadow: 0 0 0 0 rgba(79,209,197,0); }
+      0% { box-shadow: 0 0 0 0 rgba(245,196,81,0.5); }
+      70% { box-shadow: 0 0 0 12px rgba(245,196,81,0); }
+      100% { box-shadow: 0 0 0 0 rgba(245,196,81,0); }
     }
-    h1 {
-      font-size: clamp(2rem, 6vw, 3.2rem);
-      line-height: 1.05;
-      margin: 22px 0 6px;
+    .maint {
+      font-size: clamp(2.6rem, 9vw, 5.5rem);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      font-weight: 800;
+      margin: 26px 0 14px;
+      background: linear-gradient(90deg, var(--warn), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .sub {
+      font-size: clamp(1.05rem, 2.6vw, 1.35rem);
+      color: var(--ink);
+      opacity: 0.9;
+      margin: 0 auto 8px;
+      max-width: 48ch;
+    }
+    .sub-muted {
+      color: var(--muted);
+      margin: 0 auto 40px;
+      max-width: 52ch;
+    }
+    .divider {
+      height: 1px;
+      width: min(420px, 80%);
+      margin: 0 auto 34px;
+      background: linear-gradient(90deg, transparent, var(--line), transparent);
+    }
+    h2.name {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      margin: 0 0 4px;
       letter-spacing: -0.02em;
     }
     .role {
       color: var(--muted);
-      font-size: clamp(1rem, 2.4vw, 1.15rem);
-      margin: 0 0 22px;
+      font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+      margin: 0 0 16px;
     }
     .thesis {
-      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      font-size: clamp(1rem, 2.6vw, 1.25rem);
       font-weight: 600;
-      margin: 0 0 14px;
+      margin: 0 auto 14px;
+      max-width: 44ch;
       background: linear-gradient(90deg, var(--accent), var(--accent-2));
       -webkit-background-clip: text;
       background-clip: text;
@@ -84,19 +115,21 @@
     .blurb {
       color: var(--muted);
       max-width: 60ch;
-      margin: 0 0 30px;
+      margin: 0 auto 28px;
+      font-size: 0.98rem;
     }
     .links {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
+      justify-content: center;
     }
     a.link {
       color: var(--ink);
       text-decoration: none;
       border: 1px solid var(--line);
       background: var(--panel);
-      padding: 10px 16px;
+      padding: 10px 18px;
       border-radius: 10px;
       font-size: 0.95rem;
       transition: border-color 0.15s ease, transform 0.15s ease;
@@ -112,8 +145,14 @@
 </head>
 <body>
   <main class="card">
-    <span class="status"><span class="dot"></span> Portfolio launching soon</span>
-    <h1>Aaqib Aslam</h1>
+    <span class="status"><span class="dot"></span> Under maintenance</span>
+    <h1 class="maint">Portfolio under maintenance</h1>
+    <p class="sub">The full portfolio is being built &mdash; launching soon.</p>
+    <p class="sub-muted">Thanks for stopping by. Check back shortly, or reach me through the links below.</p>
+
+    <div class="divider"></div>
+
+    <h2 class="name">Aaqib Aslam</h2>
     <p class="role">Senior DevOps Engineer &middot; Cloud &amp; AI &middot; 10+ years in regulated payments</p>
     <p class="thesis">Safe, guardrailed agentic ops for regulated environments.</p>
     <p class="blurb">
@@ -121,14 +160,14 @@
       environments &mdash; banks, processors, and card networks. Deep across AWS architecture,
       Infrastructure as Code, cloud networking, CI/CD, security, and observability &mdash; now
       building agentic systems for cloud operations, including CloudGuard AI, a multi-agent platform
-      that took first place in an org-wide AI hackathon. Selected projects and write-ups are on the way.
+      that took first place in an org-wide AI hackathon.
     </p>
     <nav class="links">
       <a class="link" href="https://github.com/aaslam-dev">GitHub</a>
       <a class="link" href="https://www.linkedin.com/in/aaqib-aslam-7601271a0/">LinkedIn</a>
       <a class="link" href="mailto:aaqibaslam.official@gmail.com">Email</a>
     </nav>
-    <footer>&copy; 2026 Aaqib Aslam &middot; this page is a placeholder while the full portfolio is built</footer>
+    <footer>&copy; 2026 Aaqib Aslam &middot; placeholder page while the full portfolio is built</footer>
   </main>
 </body>
 </html>

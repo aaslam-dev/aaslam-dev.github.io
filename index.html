@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aaqib Aslam — Portfolio</title>
+  <meta name="description" content="Aaqib Aslam — safe, guardrailed agentic ops for regulated environments. Portfolio launching soon." />
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #10161f;
+      --ink: #e8edf4;
+      --muted: #8a97a6;
+      --line: #1e2833;
+      --accent: #4fd1c5;
+      --accent-2: #7aa2f7;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1000px 600px at 80% -10%, rgba(122,162,247,0.10), transparent 60%),
+        radial-gradient(800px 500px at -10% 110%, rgba(79,209,197,0.08), transparent 55%),
+        var(--bg);
+      color: var(--ink);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 28px;
+      line-height: 1.5;
+    }
+    .card {
+      width: 100%;
+      max-width: 680px;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+      font-size: 12px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 7px 12px;
+      border-radius: 999px;
+    }
+    .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 0 rgba(79,209,197,0.6);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(79,209,197,0.5); }
+      70% { box-shadow: 0 0 0 9px rgba(79,209,197,0); }
+      100% { box-shadow: 0 0 0 0 rgba(79,209,197,0); }
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.2rem);
+      line-height: 1.05;
+      margin: 22px 0 6px;
+      letter-spacing: -0.02em;
+    }
+    .role {
+      color: var(--muted);
+      font-size: clamp(1rem, 2.4vw, 1.15rem);
+      margin: 0 0 22px;
+    }
+    .thesis {
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
+      font-weight: 600;
+      margin: 0 0 14px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .blurb {
+      color: var(--muted);
+      max-width: 60ch;
+      margin: 0 0 30px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    a.link {
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 10px 16px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      transition: border-color 0.15s ease, transform 0.15s ease;
+    }
+    a.link:hover { border-color: var(--accent); transform: translateY(-1px); }
+    footer {
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 12px;
+      font-family: ui-monospace, Menlo, Consolas, monospace;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <span class="status"><span class="dot"></span> Portfolio launching soon</span>
+    <h1>Aaqib Aslam</h1>
+    <p class="role">Senior DevOps Engineer &middot; Cloud &amp; AI &middot; 10+ years in regulated payments</p>
+    <p class="thesis">Safe, guardrailed agentic ops for regulated environments.</p>
+    <p class="blurb">
+      10+ years designing and operating secure, scalable AWS platforms for highly regulated payment
+      environments &mdash; banks, processors, and card networks. Deep across AWS architecture,
+      Infrastructure as Code, cloud networking, CI/CD, security, and observability &mdash; now
+      building agentic systems for cloud operations, including CloudGuard AI, a multi-agent platform
+      that took first place in an org-wide AI hackathon. Selected projects and write-ups are on the way.
+    </p>
+    <nav class="links">
+      <a class="link" href="https://github.com/aaslam-dev">GitHub</a>
+      <a class="link" href="https://www.linkedin.com/in/aaqib-aslam-7601271a0/">LinkedIn</a>
+      <a class="link" href="mailto:aaqibaslam.official@gmail.com">Email</a>
+    </nav>
+    <footer>&copy; 2026 Aaqib Aslam &middot; this page is a placeholder while the full portfolio is built</footer>
+  </main>
+</body>
+</html>
